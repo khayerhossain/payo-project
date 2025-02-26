@@ -18,7 +18,9 @@
                         <img class="w-20" src="assets/Group.png" alt="">
                     </div>
                     <div>
-                        <h1 class=" text-3xl font-bold text-black">$4500</h1>
+                        <h1 class=" text-3xl font-bold text-black">$
+                            <span id="main-balance">4500</span>
+                        </h1>
                         <small class="text-black">Available Balance</small>
                     </div>
                 </div>
@@ -36,13 +38,15 @@
 
 
                 <div class="cards grid grid-cols-3 mt-14 gap-2 p-2 items-center">
-                    <div class="box1  border border-gray-600  p-4 text-center rounded-lg cursor-pointer ">
+                    <div id="addmoney-box"
+                        class="box1  border border-gray-600  p-4 text-center rounded-lg cursor-pointer ">
                         <img class="w-8 mx-auto" src="assets/wallet1.png" alt="">
                         <h2 class="text-black">Add Money</h2>
                     </div>
-                    <div class="box1  border border-gray-600  p-4 text-center rounded-lg cursor-pointer">
+                    <div id="cashout-box"
+                        class="box1  border border-gray-600  p-4 text-center rounded-lg cursor-pointer">
                         <img class="w-8 mx-auto" src="assets/send1.png" alt="">
-                        <h2 class="text-black">Send Money</h2>
+                        <h2 class="text-black">Cash Out</h2>
                     </div>
                     <div class="box1  border border-gray-600  p-4 text-center rounded-lg cursor-pointer">
                         <img class="w-8 mx-auto" src="assets/transaction1.png" alt="">
@@ -63,7 +67,7 @@
                 </div>
             </section>
             <!-- add money input -->
-            <section>
+            <section id="addmoney-input">
                 <legend class="text-xl text-center mt-4 font-bold text-blue-600">Add Money</legend>
 
                 <div class="hero-content flex-col lg:flex-row-reverse text-black">
@@ -92,7 +96,7 @@
                                 <label class="label">
                                     <span class="label-text  text-black font-semibold ">Amount</span>
                                 </label>
-                                <input id="number-value" type="number" placeholder="Enter your amount"
+                                <input id="amount-value" type="number" placeholder="Enter your amount"
                                     class="input input-bordered bg-white" required />
                             </div>
 
@@ -108,7 +112,50 @@
                                 </label>
                             </div>
                             <div class="form-control mt-6">
-                                <button id="login-btn" class="btn btn-primary">Add Money</button>
+                                <button id="add-money" class="btn btn-primary">Add Money</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- cash out section -->
+            <section id="Cashout">
+                <legend class="text-xl text-center mt-4 font-bold text-blue-600">Cash Out</legend>
+
+                <div class="hero-content flex-col lg:flex-row-reverse text-black">
+
+                    <div class="w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body ">
+                            <div class="form-control ">
+                                <label class="label">
+                                    <span class="label-text  text-black font-semibold ">Agent number</span>
+                                </label>
+                                <input value="03030303030" id="number-value" type="number"
+                                    placeholder="Enter 11 digit agent number" class="input input-bordered bg-white"
+                                    required />
+                            </div>
+                            <div class="form-control ">
+                                <label class="label">
+                                    <span class="label-text  text-black font-semibold ">Amount</span>
+                                </label>
+                                <input id="cashout-amount" type="number" placeholder="Enter your amount"
+                                    class="input input-bordered bg-white" required />
+                            </div>
+
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text  text-black font-semibold">PIN</span>
+                                </label>
+                                <input value="1234" id="cashout-pin" type="Enter your pin" placeholder="Enter your PIN"
+                                    class="input input-bordered bg-white" required />
+                                <label class="label">
+                                    <a href="#" class="label-text-alt link link-hover  text-black font-semibold">Forgot
+                                        password?</a>
+                                </label>
+                            </div>
+                            <div class="form-control mt-6">
+                                <button id="cashout-btn" class="btn btn-primary text-black font-bold border-none">Cash
+                                    Out</button>
                             </div>
                         </form>
                     </div>
@@ -124,5 +171,8 @@
 
     </footer>
 </body>
+<script src="scripts/add-money.js"></script>
+<script src="scripts/toggle.js"></script>
+<script src="scripts/transfer.js"></script>
 
 </html>
