@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payo</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
+        <header>
+            <nav class="flex justify-between items-center ">
+                <div class="flex justify-center items-center">
+                    <div>
+                        <img class="w-20" src="assets/Group.png" alt="">
+                    </div>
+                    <div>
+                        <h1 class=" text-3xl font-bold text-black">$4500</h1>
+                        <small class="text-black">Available Balance</small>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn bg-blue-700 text-black border-none">Log Out</button>
+                </div>
+            </nav>
+            <section class="mt-10">
+                <h1 class="text-2xl font-bold text-black">🔥Welcome to Payooo!</h1>
+                <p class="text-black">Enjoy easy and convenient financial services with us. Cashout charge is low and
+                </p>
+            </section>
+            <!-- CARDS SECTION -->
+            <section>
+
+
+                <div class="cards grid grid-cols-3 mt-14 gap-2 p-2 items-center">
+                    <div class="box1  border border-gray-600  p-4 text-center rounded-lg cursor-pointer ">
+                        <img class="w-8 mx-auto" src="assets/wallet1.png" alt="">
+                        <h2 class="text-black">Add Money</h2>
+                    </div>
+                    <div class="box1  border border-gray-600  p-4 text-center rounded-lg cursor-pointer">
+                        <img class="w-8 mx-auto" src="assets/send1.png" alt="">
+                        <h2 class="text-black">Send Money</h2>
+                    </div>
+                    <div class="box1  border border-gray-600  p-4 text-center rounded-lg cursor-pointer">
+                        <img class="w-8 mx-auto" src="assets/transaction1.png" alt="">
+                        <h2 class="text-black">Transfer </h2>
+                    </div>
+                    <div class="box1  border border-gray-600  p-4 text-center rounded-lg cursor-pointer">
+                        <img class="w-8 mx-auto" src="assets/bonus1.png" alt="">
+                        <h2 class="text-black">Get Bonus</h2>
+                    </div>
+                    <div class="box1  border border-gray-600  p-4 text-center rounded-lg cursor-pointer">
+                        <img class="w-8 mx-auto" src="assets/payoo.png" alt="">
+                        <h2 class="text-black">Service</h2>
+                    </div>
+                    <div class="box1  border border-gray-600  p-4 text-center rounded-lg cursor-pointer">
+                        <img class="w-8 mx-auto" src="assets/money1.png" alt="">
+                        <h2 class="text-black">Transaction </h2>
+                    </div>
+                </div>
+            </section>
+            <!-- add money input -->
+            <section>
+                <legend class="text-xl text-center mt-4 font-bold text-blue-600">Add Money</legend>
+
+                <div class="hero-content flex-col lg:flex-row-reverse text-black">
+
+                    <div class="w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body ">
+                            <label class="label">
+                                <span class="label-text text-black font-semibold">Select Bank</span>
+                            </label>
+                            <select class="select w-full bg-white ">
+                                <option disabled selected>select bank</option>
+                                <option value="Bkash">Bkash</option>
+                                <option value="Nagad">Nagad</option>
+                                <option value="Rocket">Rocket</option>
+                                <option value="Upay">Upay</option>
+                            </select>
+                            <div class="form-control ">
+                                <label class="label">
+                                    <span class="label-text  text-black font-semibold ">Bank Account number</span>
+                                </label>
+                                <input value="03030303030" id="number-value" type="number"
+                                    placeholder="Enter 11 digit account number" class="input input-bordered bg-white"
+                                    required />
+                            </div>
+                            <div class="form-control ">
+                                <label class="label">
+                                    <span class="label-text  text-black font-semibold ">Amount</span>
+                                </label>
+                                <input id="number-value" type="number" placeholder="Enter your amount"
+                                    class="input input-bordered bg-white" required />
+                            </div>
+
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text  text-black font-semibold">PIN</span>
+                                </label>
+                                <input value="1234" id="pin-value" type="Enter your pin" placeholder="Enter your PIN"
+                                    class="input input-bordered bg-white" required />
+                                <label class="label">
+                                    <a href="#" class="label-text-alt link link-hover  text-black font-semibold">Forgot
+                                        password?</a>
+                                </label>
+                            </div>
+                            <div class="form-control mt-6">
+                                <button id="login-btn" class="btn btn-primary">Add Money</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </header>
+    </section>
+    <main>
+
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
